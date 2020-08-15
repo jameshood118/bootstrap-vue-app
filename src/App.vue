@@ -1,15 +1,26 @@
 <template>
-  <b-container>
-    <p>Hello bootstrap vue!</p>
-  </b-container>
+  <div id="app">
+    <b-container>
+      <Navigation />
+      <main>
+        <router-view />
+      </main>
+      <BottomFooter />
+    </b-container>
+  </div>
 </template>
 
 <script>
+import Navigation from './components/navigation.vue'
+import BottomFooter from './components/bottom-footer.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Navigation,
+    BottomFooter
+  }
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
