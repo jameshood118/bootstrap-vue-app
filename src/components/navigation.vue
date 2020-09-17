@@ -1,5 +1,13 @@
 <template>
-  <b-nav>
+  <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar-brand href="#">
+        <b-navbar-brand href="#">Hood Studios</b-navbar-brand>
+    </b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
     <template v-for="route in $router.options.routes">
       <b-nav-item
         :key="route.path"
@@ -10,7 +18,9 @@
         {{ route.name }}
       </b-nav-item>
     </template>
-  </b-nav>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
