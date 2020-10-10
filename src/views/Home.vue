@@ -1,6 +1,6 @@
 <template>
   <b-container>
-        <b-jumbotron header="BootstrapVue" lead="Bootstrap v4 Components for Vue.js 2">
+        <b-jumbotron>
         <img src="@/assets/gallerybanner.png" />
         </b-jumbotron>
   </b-container>
